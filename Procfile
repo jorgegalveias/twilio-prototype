@@ -1,1 +1,2 @@
-web: python receive_call.py
+
+web: gunicorn app:app --log-file=-

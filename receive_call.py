@@ -8,8 +8,8 @@ app = Flask(__name__)
 def hello_monkey():
   """Respond to incoming requests."""
   resp = VoiceResponse()
-  resp.say("Hello Monkey")
-
+  resp.say("You are going to be recorded")
+  resp.record(transcribe=True)
   return str(resp)
 
 if __name__ == "__main__":
